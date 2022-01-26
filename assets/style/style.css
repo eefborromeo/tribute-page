@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+#main {
+  position: relative;
+  height: 100vh;
+}
+
+#img-div {
+  height: 100%;
+  position: fixed;
+}
+
+#img-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#img-caption {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  font-family: 'Open Sans';
+}
+
+#img-caption h1 {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 6rem;
+  margin-top: 2rem;
+  width: 90%;
+  margin: 2rem auto;
+}
+
+#img-caption h2 {
+  font-size: 1.5rem;
+}
+
+#tribute-info {
+  position: relative;
+  top: 100vh;
+  padding: 4rem 0;
+  background-color: white;
+}
+
+#tribute-info .container {
+  width: 80%;
+  margin: auto;
+}
+
+#tribute-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 900;
+  font-style: italic;
+}
+#tribute-info h4 {
+  font-size: 1rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+#tribute-info p {
+  margin-bottom: 1.5rem;
+}
+
+#tribute-info .columns {
+  padding-top: 5rem;
+  display: flex;
+  gap: 15px;
+}
+
+#tribute-info .columns h4,
+#tribute-info .columns p {
+  flex: 1;
+}
+
+#tribute-info .columns h4 {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 2.5rem;
+}
+
+#tribute-info .columns p {
+  margin-top: 0.5rem;
+}
+
+@media all and (min-width: 768px) {
+  #img-caption h1 {
+    font-size: 9rem;
+  }
+
+  #img-caption h2 {
+    font-size: 2rem;
+  }
+
+  #tribute-info {
+    min-height: 100%;
+  }
+
+  #tribute-info .container {
+    width: 60%;
+    padding: 3rem 0;
+  }
+}
+
+@media all and (max-width: 768px) {
+  #tribute-info .columns {
+    flex-direction: column;
+  }
+}
