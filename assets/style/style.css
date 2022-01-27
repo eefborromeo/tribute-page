@@ -5,6 +5,10 @@
   font-family: 'Lato', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 p {
   font-size: 18px;
   line-height: 1.5;
@@ -37,17 +41,40 @@ p {
   font-family: 'Open Sans';
 }
 
+#img-caption nav {
+  padding: 30px 50px 0;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+}
+
+#img-caption > nav > ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+#img-caption > nav > ul > li {
+  font-size: 1.5rem;
+  padding: 0 10px;
+}
+
+#img-caption > nav > ul > li > a {
+  color: rgb(137, 137, 137);
+  text-decoration: none;
+}
+
 #img-caption h1 {
   font-weight: 900;
   font-style: italic;
   font-size: 6rem;
   margin-top: 2rem;
   width: 90%;
-  margin: 2rem auto;
+  margin: 4rem auto 0;
 }
 
 #img-caption h2 {
-  font-size: 1.5rem;
+  font-size: 5rem;
 }
 
 #tribute-info {
@@ -62,14 +89,18 @@ p {
   margin: auto;
 }
 
+#tribute-info .container > div {
+  padding: 250px 0;
+}
+
 #tribute-info h3 {
-  font-size: 1.5rem;
+  font-size: 5rem;
   margin-bottom: 1.5rem;
   font-weight: 900;
   font-style: italic;
 }
 #tribute-info h4 {
-  font-size: 1rem;
+  font-size: 4rem;
   font-weight: 900;
   font-style: italic;
 }
@@ -113,12 +144,33 @@ p {
   }
 
   #tribute-info .container {
-    width: 60%;
+    width: 70%;
     padding: 3rem 0;
   }
 }
 
 @media all and (max-width: 768px) {
+  #img-caption nav {
+    padding: 30px 45px 0;
+    width: 100%;
+  }
+
+  #img-caption > nav > ul > li {
+    font-size: 1rem;
+  }
+
+  #img-caption h1 {
+    font-size: 5rem;
+  }
+
+  #img-caption h2 {
+    font-size: 1rem;
+  }
+
+  #tribute-info .container > div {
+    padding: 50px 0;
+  }
+
   #tribute-info .columns {
     flex-direction: column;
   }
